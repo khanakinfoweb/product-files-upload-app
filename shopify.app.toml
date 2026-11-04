@@ -1,11 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-<<<<<<< HEAD
 client_id = "a3db4eb7a9d95ec9d1b549e673bc740d"
-=======
-client_id = "4ffed5f31d7cf803c09f9118fef20d11"
->>>>>>> 691837f3c6329cf3ff53255332584e03cdc48015
-application_url = "https://example.com"
+application_url = "https://product-files-upload-app.onrender.com"
 embedded = true
 name = "product-files-upload-app"
 
@@ -75,8 +71,7 @@ api_version = "2026-10"
   query_filter = "product.status:'ACTIVE'"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [ "https://product-files-upload-app.onrender.com/api/auth" ]
 
 [build]
-include_config_on_deploy = true
 automatically_update_urls_on_dev = true
