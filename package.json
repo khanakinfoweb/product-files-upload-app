@@ -2,7 +2,11 @@
   "name": "product-files-upload-app",
   "private": true,
   "scripts": {
+<<<<<<< HEAD
     "build": "react-router build",
+=======
+    "build": "npx prisma generate && npx prisma db push && react-router build",
+>>>>>>> 691837f3c6329cf3ff53255332584e03cdc48015
     "dev": "shopify app dev",
     "config:link": "shopify app config link",
     "generate": "shopify app generate",

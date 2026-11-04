@@ -1,6 +1,10 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+<<<<<<< HEAD
 client_id = "a3db4eb7a9d95ec9d1b549e673bc740d"
+=======
+client_id = "4ffed5f31d7cf803c09f9118fef20d11"
+>>>>>>> 691837f3c6329cf3ff53255332584e03cdc48015
 application_url = "https://example.com"
 embedded = true
 name = "product-files-upload-app"
