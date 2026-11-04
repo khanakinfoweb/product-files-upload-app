@@ -1,0 +1,44 @@
+<div class="custom-file-upload-wrapper" style="margin: 15px 0;">
+  <label for="app-file-upload" style="display: block; margin-bottom: 5px; font-weight: bold;">
+    {{ block.settings.label_text }}
+  </label>
+  
+  <!-- The file input bound to the native Shopify product form -->
+  <input 
+    type="file" 
+    id="app-file-upload" 
+    name="properties[{{ block.settings.property_name }}]"
+    form="product-form-{{ section.id }}"
+    {% if block.settings.is_required %}required{% endif %}
+  >
+</div>
+
+{% schema %}
+{
+  "name": "File Upload",
+  "target": "section",
+  "enabled_on": {
+    "templates": ["product"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "label_text",
+      "label": "Field Label",
+      "default": "Upload your file:"
+    },
+    {
+      "type": "text",
+      "id": "property_name",
+      "label": "Order Property Name",
+      "default": "File"
+    },
+    {
+      "type": "checkbox",
+      "id": "is_required",
+      "label": "Make this field required",
+      "default": false
+    }
+  ]
+}
+{% endschema %}
